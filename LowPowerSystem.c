@@ -13,9 +13,9 @@
 #define h2 102
 #define h3 39
 
-//char Client_Id[] = "your Cloud Client_Id";
-//char User_name[] = "your Cloud User_name";
-//char SecretKey[] = "your Cloud SecretKey";
+char Client_Id[] = "your Cloud Client_Id";
+char User_name[] = "your Cloud User_name";
+char SecretKey[] = "your Cloud SecretKey";
 int LowPowerMode = 0;
 int NetState = 0;
 char CloudIp[] = "x.x.x.x";
@@ -312,4 +312,5 @@ static void ThreadEntry()
     attr.name = "ThreadMqtt";
     osThreadNew(ThreadMqtt, NULL, &attr);
 }
+
 APP_FEATURE_INIT(ThreadEntry);
